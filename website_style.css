@@ -1,5 +1,8 @@
 body {
-    background-image: url(https://marketplace.canva.com/EAFMZO25Fds/1/0/1600w/canva-green-playful-frog-desktop-wallpaper-0uuRld0-IIg.jpg);
+    background-image: url('background.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     text-align: center;
@@ -28,7 +31,7 @@ button {
     height: 60px; 
     padding: 10px; 
     font-size: 16px; 
-    cursor: url('mug.cur'), pointer;
+    cursor: url('mug.cur'), auto;
     border: 2px solid #333;
     border-radius: 5px;
     background-color: #97ae9e;
@@ -64,7 +67,7 @@ button:hover {
     color: white;
     border: none;
     padding: 5px 10px;
-    cursor: url('mug.cur'), pointer;
+    cursor: url('mug.cur'), auto;
 }
 
 .close-btn:hover {
