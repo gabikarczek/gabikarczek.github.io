@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: #98a6ae;
+    background-color: #758a96;
 }
 
   .image-container {
@@ -71,12 +71,13 @@ button:hover {
 }
 
 .close-btn:hover {
-    background-color: #649077;
+    background-color: #758a96;
 }
 
 .image-container img {
     max-width: 100%;
     height:auto;
+    object-fit: contain;
 }
 
 footer {
