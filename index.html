@@ -1,1 +1,57 @@
-mugs
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>mugs</title>
+        <link rel="stylesheet" href="websitestyle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br>
+        <h1>looking for the perfect mug?</h1>
+        <br> <br> <br> <br> 
+        <div class="button-columns">
+            <div class="column">
+                <button onclick="showImage('https://i.pinimg.com/736x/99/b1/74/99b1740ef00d7f469bdf8b39373a717c.jpg')">cute</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/b7/cb/e4/b7cbe49dc1148e59015dcccc54171a30.jpg')">quirky</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/47/a0/52/47a052524b4c30bce879d4d796560f22.jpg')">for coffee</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/59/ae/ae/59aeaed290212e3bfb60999d93785395.jpg')">for gamers</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/9b/1c/0e/9b1c0ee9be1a3bbe02916d4660635825.jpg')">red</button>
+            </div>
+            <div class="column">
+                <button onclick="showImage('https://i.pinimg.com/736x/5b/ab/39/5bab394cfca63a2d5db9fb4a6ddf811c.jpg')">for nlp students</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/3d/c6/74/3dc674acfff24acd6c7090889408059d.jpg')">green</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/83/d2/87/83d287658b0b5fb7598cf05a3a4dae16.jpg')">for tea</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/d2/85/59/d28559aeafd4d0a48782781f576c1180.jpg')">for your grandma</button>
+                <button onclick="showImage('https://i.pinimg.com/736x/31/9c/3f/319c3fc92444d37802ef0989c69acf0f.jpg')">for a walk</button>
+            </div>
+        </div>
+        <script>
+            function showImage(imageUrl) {
+                let imageContainer = document.createElement("div");
+                imageContainer.className = "image-container";
+    
+                let image = document.createElement("img");
+                image.src = imageUrl;
+                image.alt = "Mug Image";
+
+                let closeButton = document.createElement("button");
+                closeButton.textContent = "Close";
+                closeButton.className = "close-btn";
+                closeButton.onclick = function () {
+                    document.body.removeChild(imageContainer);
+                };
+    
+                imageContainer.appendChild(closeButton);
+                imageContainer.appendChild(image);
+    
+                document.body.appendChild(imageContainer);
+            }
+        </script>
+        <footer>
+            <a href="https://github.com/gabikarczek" target="_blank"><i class="fab fa-github" style='font-size:30px; color:#649077'></i></a><p>check out my work!</p>
+        </footer>
+    </body>
+
+</html>
