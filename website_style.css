@@ -3,7 +3,7 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     text-align: center;
-    cursor: url('mug.png'), 16 16 pointer;
+    cursor: url('mug.png'), pointer;
   }
 
 h1 {
