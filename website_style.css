@@ -1,0 +1,88 @@
+body {
+    background-image: url(https://marketplace.canva.com/EAFMZO25Fds/1/0/1600w/canva-green-playful-frog-desktop-wallpaper-0uuRld0-IIg.jpg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+
+h1 {
+    margin-bottom: 20px;
+    color:#5b5656
+  }
+
+  .button-columns {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+button {
+    width: 200px; 
+    height: 60px; 
+    padding: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #97ae9e;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #98a6ae;
+}
+
+  .image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-width: 75%;
+    max-height: 75%;
+    overflow: auto;
+}
+
+.close-btn {
+    position: absolute;
+    width: 100px;
+    height: 40px; 
+    top: 5px;
+    right: 5px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #649077;
+}
+
+.image-container img {
+    max-width: 100%;
+    height:auto;
+}
+
+footer {
+    position: fixed;
+    color:#5b5656;
+    bottom: 0; 
+    left: 0; 
+    padding: 10px 20px; 
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
